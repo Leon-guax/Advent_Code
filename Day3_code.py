@@ -1,9 +1,4 @@
-objects = dir()
 
-for obj in objects:
-    if not obj.startswith("__"):
-        del globals()[obj]
-    
 def find_most_common_bin(array):
     size = len(array)
     if(sum(array)>= size/2):
