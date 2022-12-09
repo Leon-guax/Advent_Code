@@ -1,7 +1,6 @@
 
 
 def all_unique(item):
-    #print(item, set(item))
     return len(set(item)) == len(item)
 
 def find_N_different(inp_puzzle, N):
@@ -9,7 +8,6 @@ def find_N_different(inp_puzzle, N):
     while ( counter_1 <= len(inp_puzzle)):
         if all_unique(inp_puzzle[counter_1:counter_1+N]):
             break
-        #print (inp_puzzle[counter_1:counter_1+N])
         counter_1 +=1       
     return counter_1 +N
 
@@ -17,11 +15,7 @@ def find_N_different(inp_puzzle, N):
 inp_puzzle = ''
 with open('Day6_input.txt') as f:
     for line in f:
-
         print(find_N_different(line, 4), 4)
         print(find_N_different(line, 14), 14)
-
-   
-
 
 #%%
