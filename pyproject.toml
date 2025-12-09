@@ -2,15 +2,16 @@
 name = "adv-code"
 version = "0.1.0"
 description = ""
-authors = ["morellil <leonardo.morelli@tno.nl>"]
+authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<4.0"
 numpy = "^2.2.0"
 networkx = "^3.4.2"
 tqdm = "^4.67.1"
 ipykernel = "^6.29.5"
+scipy = "*"
 
 
 [build-system]
